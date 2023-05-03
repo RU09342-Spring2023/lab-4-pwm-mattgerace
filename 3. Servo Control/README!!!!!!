@@ -1,0 +1,5 @@
+The code works by instantiating all the necessary pins, primarily the buttons and the servo pin.  Then,
+a timer is generated in order to do PWM.  The capture control registers are set to 20000.  In the increase stage,
+the code first checks to see if the value of 20000 is reached, then it continues to count up until it reaches this value
+and changes the duty cycle which causes the servo to spin.  If the value is reached or exceeded, it caps the servo.
+The decrease interrupt works the same way.
